@@ -1,0 +1,133 @@
+/*css transitions
+css keyframes
+css transform */
+
+* {
+    background-color:#eee;
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+/*#Demo{
+    background-color:red;
+    height:50px;
+    width:200px;
+    position:relative;
+    animation-name:animationBlock;
+    animation-duration:3s;
+    animation-iteration-count:infinite;*
+    animation:animationBlock 10s infinite;
+}*/
+.box {
+    padding:10px;
+    width:300px;
+    margin:10px;
+    width:200px;
+    position:relative;
+    animation:animationBlock 10s infinite;
+}
+#box1 {
+    /*background-color:purple*/
+    animation-timing-function:linear;
+}
+#box2 {
+   /* background-color:gray;*/
+   animation-timing-function:ease;
+}
+#box3{
+    /*background-color:yellow*/
+    animation-timing-function:ease-in;
+}
+#box4 {
+    /*background-color:blue;*/
+    animation-timing-function:ease-out;
+}
+#box5 {
+   /* background-color:orange;*/
+   animation-timing-function:ease-in-out;
+}
+
+@keyframes animationBlock{
+from {
+    left:0;
+}
+to{
+    left:1200px;
+}
+}
+  img{
+      width:200px;
+      height:100px;
+  } 
+
+ #man {
+      position:relative;
+      animation-delay:3s;
+      animation:manRunning 20s infinite;
+  }
+@kayframs manrunning {
+        from {
+            left: 0
+        }
+    
+        to {
+            left: 1200px;
+        }
+    }
+
+/*#Demo {
+    background-color:crimson;
+    color:#fff;
+    height:300px;
+    width:300px;
+    border:1px solid #ffffff;
+    position:relative;
+   /* position:absolute;
+    right:0;*/
+    /*animation-name:animationBlock;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+     animation-delay:5s;
+}
+/* keyframe */
+/*@keyframes animationBlock {
+  /*from {
+      left:0;
+      background-color:rgba(94, 128 , 0);
+      border-radius:100%;
+  }
+  To {
+      left:1000px;
+      background-color:rgba(255,0,191);
+      border-radius:100%;
+  }*/
+ /* 0%{
+   background-color:#1111;
+   left:0px;
+  }
+  20%{
+  background-color:rgb(236, 19, 19);
+  left:200px;
+  border-radius:10%;
+  }
+  40%{
+   background-color:rgb(82,53,257);
+   left:400px;
+   border-radius:30%;
+  }
+  60%{
+background-color:rgb(175,24,20);
+  left:600px;
+  border-radius:50%
+  }
+  80%{
+  background-color:rgb(119,0,10);
+  left:800px;
+  border-radius:70%;
+  }
+  100%{
+  background-color:rgb()
+  left:1000px;
+  border-radius:90%;
+  }
+}*/

@@ -1,0 +1,117 @@
+/*@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* overflow-x: hidden; */
+}
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+    background-color: #eee;
+}
+
+/*-------laptop css starts here---------------*/
+
+
+#headerBlock {
+    background-color: crimson;
+    color: #fff;
+    height: 50px;
+    width: 100%;
+}
+
+#MenuBlock {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+#MenuBlock li a {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+#bars {
+    display: none;
+}
+
+/*-------laptop css ends here---------------*/
+
+/*-------mobile css starts here---------------*/
+/*------mobile device -----------xs*/
+@media screen and (max-width:500px) {
+    .bars {
+        display: inline-block;
+        padding: 4px 30px;
+    }
+
+    .bars i {
+        font-size: 20px;
+    }
+
+    #headerBlock {
+        background-color: #673AB7;
+        height: auto;
+        transform: translate(-500px);
+        transition: ease all .7s;
+
+    }
+
+    #bars {
+        background: #673AB7;
+        width: 100%;
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #fff;
+
+    }
+
+    #MenuBlock {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: auto;
+        flex-direction: column;
+
+
+    }
+
+    #barsBlock:checked~#headerBlock {
+        transform: translate(0px);
+
+
+    }
+
+    #headerBlock ul li {
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        display: block;
+    }
+}
+
+/*-------mobile css ends here---------------*/
+
+/*-------Tablet css starts here---------------*/
+@media screen and (max-width:800px)and (min-width:600px) {
+    #headerBlock {
+        background-color: #5db73a;
+        height: auto;
+    }
+}
+
